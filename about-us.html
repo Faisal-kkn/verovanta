@@ -6,81 +6,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>VeroVanta</title>
   <link rel="shortcut icon" type="image/png" href="./assets/images/logos/favicon.svg" />
-  <link rel="stylesheet" href="./assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="./assets/libs/aos-master/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 
 <body>
 
   <!-- Header -->
-<header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100">
-  <div class="container">
-    <div class="header-wrapper d-flex align-items-center justify-content-between">
-      <div class="logo">
-        <a href="index.html" class="logo-white">
-          <img src="./assets/images/logos/logo-white.png" alt="logo" class="img-fluid logo-img">
-        </a>
-        <a href="index.html" class="logo-dark">
-          <img src="./assets/images/logos/logo-dark.png" alt="logo" class="img-fluid logo-img">
-        </a>
-      </div>
-      <div class="d-flex align-items-center gap-4">
+  <header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100">
+    <div class="container">
+      <div class="header-wrapper d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <a href="./" class="logo-white">
+            <img src="./assets/images/logos/logo-white.png" alt="logo" class="img-fluid logo-img">
+          </a>
+          <a href="./" class="logo-dark">
+            <img src="./assets/images/logos/logo-dark.png" alt="logo" class="img-fluid logo-img">
+          </a>
+        </div>
+        <div class="d-flex align-items-center gap-4">
 
-        <div class="btn-group">
-          <button
-            class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle"
-            type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
-            <iconify-icon icon="solar:hamburger-menu-line-duotone" class="menu-icon fs-8 text-dark"></iconify-icon>
-          </button>
-          <ul class="dropdown-menu dropdown-menu-end p-4">
-            <div class="d-flex flex-column gap-6">
-              <div class="hstack justify-content-between border-bottom pb-6">
-                <p class="mb-0 fs-5 text-dark">Menu</p>
-                <button type="button" class="btn-close opacity-75" aria-label="Close"></button>
-              </div>
-              <div class="d-flex flex-column gap-3">
-                <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-2">
-                  <li class="header-item">
-                    <a href="index.html" aria-current="true"
-                      class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                        src="./assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                        class="img-fluid animate-spin">Home</a>
-                  </li>
-                  <li class="header-item">
-                    <a href="about-us.html" class="header-link active hstack gap-2 fs-7 fw-bold text-dark"><img
-                        src="./assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                        class="img-fluid animate-spin">About</a>
-                  </li>
-                  <!-- <li class="header-item">
+          <div class="btn-group">
+            <button
+              class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle"
+              type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+              <iconify-icon icon="solar:hamburger-menu-line-duotone" class="menu-icon fs-8 text-dark"></iconify-icon>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end p-4">
+              <div class="d-flex flex-column gap-6">
+                <div class="hstack justify-content-between border-bottom pb-6">
+                  <p class="mb-0 fs-5 text-dark">Menu</p>
+                  <button type="button" class="btn-close opacity-75" aria-label="Close"></button>
+                </div>
+                <div class="d-flex flex-column gap-3">
+                  <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-2">
+                    <li class="header-item">
+                      <a href="./" aria-current="true"
+                        class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                          src="./assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
+                          class="img-fluid animate-spin">Home</a>
+                    </li>
+                    <li class="header-item">
+                      <a href="about-us.html" class="header-link active hstack gap-2 fs-7 fw-bold text-dark"><img
+                          src="./assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
+                          class="img-fluid animate-spin">About</a>
+                    </li>
+                    <!-- <li class="header-item">
                       <a href="blog.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
                           src="./assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
                           class="img-fluid animate-spin">Blog</a>
                     </li> -->
-                  <li class="header-item">
-                    <a href="services.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                        src="./assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                        class="img-fluid animate-spin">Services</a>
-                  </li>
-                  <li class="header-item">
-                    <a href="contact.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                        src="./assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                        class="img-fluid animate-spin">Contact</a>
-                  </li>
-                </ul>
-              </div>
-              <!-- <div>
+                    <li class="header-item">
+                      <a href="services.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                          src="./assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
+                          class="img-fluid animate-spin">Services</a>
+                    </li>
+                    <li class="header-item">
+                      <a href="contact.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                          src="./assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
+                          class="img-fluid animate-spin">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- <div>
                 <a class="text-dark" href="tel:+918078546511">+91 8078 546 511</a>
                 <a class="fs-5 text-dark fw-bold"
                   href="mailto:verovantacommunications@gmail.com">verovantacommunications@gmail.com</a>
               </div> -->
-            </div>
-          </ul>
+              </div>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 
   <!--  Page Wrapper -->
   <div class="page-wrapper overflow-hidden">
@@ -517,7 +521,8 @@
                     data-aos-duration="1000">
                     <ul class="list-disc pl-20 fs-5">
                       <li class="" data-aos="fade-right" data-aos-delay="110" data-aos-duration="1100">
-                        <strong>Stakeholder-Centric Approach</strong>: We don't start with solutions—we start with stories.
+                        <strong>Stakeholder-Centric Approach</strong>: We don't start with solutions—we start with
+                        stories.
                         Your employees' stories. Your customers' stories. Your leadership's vision. Because
                         sustainable change happens when everyone sees themselves in the solution.
                       </li>
@@ -552,7 +557,8 @@
                   data-aos-duration="1000">
                   <img src="./assets/images/quotation.png" alt="quotation" class="position-absolute"
                     style="width: 40px; top: -10px;">
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To improve productivity by making both employers and employees genuinely
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To improve productivity by making both employers and
+                  employees genuinely
                   satisfied, creating workplaces where people don't just work—they flourish.
                 </h2>
               </div>
@@ -573,54 +579,54 @@
     </section>
   </div>
 
-<footer class="footer bg-dark pt-5 pt-lg-10 pt-xl-10 pb-3">
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-6 mb-8 mb-xl-0">
-        <div class="d-flex flex-column gap-4 pe-xl-3">
-          <h2 class="mb-0 text-white fs-10">Want to build something together?</h2>
-          <div class="d-flex flex-column gap-2">
-            <a href="tel:+918078546511" class="link-hover hstack gap-2 text-white fs-5">
-              <iconify-icon icon="lucide:phone" class="fs-7 text-primary"></iconify-icon>
-              +91 80785 46511
-            </a>
-            <a href="mailto:verovantacommunications@gmail.com" class="link-hover hstack gap-2 text-white fs-5"
-              style="overflow-wrap: break-word;width: 100%;word-break: break-word;">
-              <iconify-icon icon="lucide:mail" class="fs-7 text-primary"></iconify-icon>
-              verovantacommunications@gmail.com
-            </a>
-            <a href="#" class="link-hover hstack gap-2 text-white fs-5">
-              <iconify-icon icon="lucide:map-pin" class="fs-7 text-primary"></iconify-icon>
-              Corrazone, Panadans, CUSAT, Kalamassery, Kochi, Kerala - 682022
+  <footer class="footer bg-dark pt-5 pt-lg-10 pt-xl-10 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 mb-8 mb-xl-0">
+          <div class="d-flex flex-column gap-4 pe-xl-3">
+            <h2 class="mb-0 text-white fs-10">Want to build something together?</h2>
+            <div class="d-flex flex-column gap-2">
+              <a href="tel:+918078546511" class="link-hover hstack gap-2 text-white fs-5">
+                <iconify-icon icon="lucide:phone" class="fs-7 text-primary"></iconify-icon>
+                +91 80785 46511
+              </a>
+              <a href="mailto:verovantacommunications@gmail.com" class="link-hover hstack gap-2 text-white fs-5"
+                style="overflow-wrap: break-word;width: 100%;word-break: break-word;">
+                <iconify-icon icon="lucide:mail" class="fs-7 text-primary"></iconify-icon>
+                verovantacommunications@gmail.com
+              </a>
+              <a href="#" class="link-hover hstack gap-2 text-white fs-5">
+                <iconify-icon icon="lucide:map-pin" class="fs-7 text-primary"></iconify-icon>
+                Corrazone, Panadans, CUSAT, Kalamassery, Kochi, Kerala - 682022
+              </a>
+            </div>
+            <a href="./">
+              <img src="./assets/images/logos/logo-white.svg" alt="logo" class="img-fluid logo-img">
             </a>
           </div>
-          <a href="index.html">
-            <img src="./assets/images/logos/logo-white.svg" alt="logo" class="img-fluid logo-img">
-          </a>
+        </div>
+        <div class="col-md-5 col-xl-3 mb-8 mb-xl-0">
+          <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
+            <li><a class="link-hover fs-5 text-white" href="about-us.html">About Us</a></li>
+            <li><a class="link-hover fs-5 text-white" id="services" href="services.html">Services</a></li>
+            <li><a class="link-hover fs-5 text-white" href="#">Success Stories</a></li>
+            <li><a class="link-hover fs-5 text-white" href="#">Resources</a></li>
+            <li><a class="link-hover fs-5 text-white" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-5 col-xl-3 mb-8 mb-xl-0">
+          <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
+            <li><a class="link-hover fs-5 text-white" href="#!">LinkedIn</a></li>
+            <li><a class="link-hover fs-5 text-white" href="#!">Instagram</a></li>
+            <li><a class="link-hover fs-5 text-white" href="#!">Facebook</a></li>
+          </ul>
         </div>
       </div>
-      <div class="col-md-5 col-xl-3 mb-8 mb-xl-0">
-        <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
-          <li><a class="link-hover fs-5 text-white" href="about-us.html">About Us</a></li>
-          <li><a class="link-hover fs-5 text-white" id="services" href="services.html">Services</a></li>
-          <li><a class="link-hover fs-5 text-white" href="#">Success Stories</a></li>
-          <li><a class="link-hover fs-5 text-white" href="#">Resources</a></li>
-          <li><a class="link-hover fs-5 text-white" href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="col-md-5 col-xl-3 mb-8 mb-xl-0">
-        <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
-          <li><a class="link-hover fs-5 text-white" href="#!">LinkedIn</a></li>
-          <li><a class="link-hover fs-5 text-white" href="#!">Instagram</a></li>
-          <li><a class="link-hover fs-5 text-white" href="#!">Facebook</a></li>
-        </ul>
-      </div>
     </div>
-  </div>
-  <p class="mb-0 text-white text-center mt-3 mt-lg-8">Copyright © 2025 <a class="text-white text-opacity-70 " href="#"
-      target="_blank">VeroVanta</a>. All Rights Reserved.
-  </p>
-</footer>
+    <p class="mb-0 text-white text-center mt-3 mt-lg-8">Copyright © 2025 <a class="text-white text-opacity-70 " href="#"
+        target="_blank">VeroVanta</a>. All Rights Reserved.
+    </p>
+  </footer>
   <div class="get-template hstack gap-2">
 
     <button class="btn bg-primary p-2 round-52 rounded-circle hstack justify-content-center flex-shrink-0"
@@ -629,11 +635,13 @@
     </button>
   </div>
 
-
-  <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
-  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
-  <script src="./assets/libs/aos-master/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./assets/js/custom.js"></script>
   <!-- solar icons -->
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
