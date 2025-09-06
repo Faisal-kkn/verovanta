@@ -1233,22 +1233,24 @@
                 breakthrough begins with a conversation. Every transformation -->
             </div>
             <div class="col-xl-7">
-              <form class="d-flex flex-column gap-7" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+              <form class="d-flex flex-column gap-7" id="contact-form" onsubmit="sendEmail(event)" data-aos="fade-up"
+                data-aos-delay="200" data-aos-duration="1000">
+                <div id="notification" style="display:none; padding:10px; margin-top:10px; border-radius:5px;"></div>
                 <div>
                   <input type="text" class="form-control border-bottom border-dark" id="formGroupExampleInput"
-                    placeholder="Name">
+                    placeholder="Name" name="name" required>
                 </div>
                 <div>
                   <input type="text" class="form-control border-bottom border-dark" id="formGroupExampleInput"
-                    placeholder="Company">
+                    placeholder="Company" name="company">
                 </div>
                 <div>
                   <input type="email" class="form-control border-bottom border-dark" id="exampleInputEmail1"
-                    placeholder="Email" aria-describedby="emailHelp">
+                    placeholder="Email" aria-describedby="emailHelp" name="email" required>
                 </div>
                 <div>
                   <textarea class="form-control border-bottom border-dark" id="exampleFormControlTextarea1"
-                    placeholder="Tell us about your requirement" rows="3"></textarea>
+                    placeholder="Tell us about your requirement" rows="3" name="requirement" required></textarea>
                 </div>
                 <button type="submit" class="btn w-100 justify-content-center">
                   <span class="btn-text">Book a Free L&D Consultation</span>
@@ -1274,7 +1276,8 @@
                 <iconify-icon icon="lucide:phone" class="fs-7 text-primary"></iconify-icon>
                 +91 80785 46511
               </a>
-              <a href="mailto:verovantacommunications@gmail.com" class="link-hover hstack gap-2 text-white fs-5" style="overflow-wrap: break-word;width: 100%;word-break: break-word;">
+              <a href="mailto:verovantacommunications@gmail.com" class="link-hover hstack gap-2 text-white fs-5"
+                style="overflow-wrap: break-word;width: 100%;word-break: break-word;">
                 <iconify-icon icon="lucide:mail" class="fs-7 text-primary"></iconify-icon>
                 verovantacommunications@gmail.com
               </a>
@@ -1326,6 +1329,35 @@
   <script src="./assets/js/custom.js"></script>
   <!-- solar icons -->
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init("6DXhveWmkybis5ZXx"); // Only ONE call here
+
+    function showNotification(message, isSuccess) {
+      var notification = document.getElementById('notification');
+      notification.style.display = 'block';
+      notification.textContent = message;
+      notification.style.backgroundColor = isSuccess ? '#d4edda' : '#f8d7da'; // green/red background
+      notification.style.color = isSuccess ? '#155724' : '#721c24';           // green/red text color
+      setTimeout(() => {
+        notification.style.display = 'none';
+      }, 5000); // Hide after 5 seconds
+    }
+
+    function sendEmail(e) {
+      e.preventDefault();
+
+      emailjs.sendForm('service_b10w1zb', 'template_bnyyxvg', '#contact-form')
+        .then(function () {
+          showNotification('Your inquiry has been sent!', true);
+          document.getElementById('contact-form').reset();
+        }, function (error) {
+          console.log({ error });
+          showNotification('Failed to send. Try again.', false);
+        });
+    }
+  </script>
 </body>
 
 </html>
