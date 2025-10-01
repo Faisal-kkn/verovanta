@@ -1,93 +1,144 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>VeroVanta</title>
+  <title>Contact Us | VeroVanta Communications</title>
+  <!-- SEO Meta -->
+  <meta name="description"
+    content="Contact VeroVanta Communications for a complimentary strategy session. We help organizations solve communication challenges, empower teams, and improve business outcomes. Based in Kochi, Kerala.">
+  <meta name="keywords"
+    content="VeroVanta, Communications, Strategy Session, Contact, Business Solutions, Kochi, Kerala, Employee Engagement, Team Empowerment">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Contact Us | VeroVanta Communications" />
+  <meta property="og:description"
+    content="Schedule your complimentary strategy session with VeroVanta Communications. We help your teams and business thrive. Located in Kochi, Kerala." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://verovantacommunications.com/contact.html" />
+  <meta property="og:image"
+    content="https://verovantacommunications.com/assets/images/backgrounds/contact-banner.jpg" />
+  <meta property="og:site_name" content="VeroVanta Communications" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact Us | VeroVanta Communications" />
+  <meta name="twitter:description"
+    content="Schedule your complimentary strategy session with VeroVanta Communications. We help your teams and business thrive." />
+  <meta name="twitter:image"
+    content="https://verovantacommunications.com/assets/images/backgrounds/contact-banner.jpg" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://verovantacommunications.com/contact.html" />
+
+  <!-- Schema.org Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "VeroVanta Communications",
+    "url": "https://verovantacommunications.com",
+    "logo": "https://verovantacommunications.com/assets/images/logos/logo-dark.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-80785-46511",
+      "contactType": "customer service",
+      "areaServed": "IN",
+      "availableLanguage": ["English", "Hindi", "Malayalam"]
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Corrazone, Panadans, CUSAT, Kalamassery",
+      "addressLocality": "Kochi",
+      "addressRegion": "Kerala",
+      "postalCode": "682022",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
+
+  <!-- Favicon and CSS -->
   <link rel="shortcut icon" type="image/png" href="./assets/images/logos/favicon.svg" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 
 <body>
-
   <!-- Header -->
-  <header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100">
+  <header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100" role="banner">
     <div class="container">
       <div class="header-wrapper d-flex align-items-center justify-content-between">
         <div class="logo">
-          <a href="./" class="logo-white">
-            <img src="./assets/images/logos/logo-white.png" alt="logo" class="img-fluid logo-img">
+          <a href="./" aria-label="VeroVanta Home" class="logo-white">
+            <img src="./assets/images/logos/logo-white.png" alt="VeroVanta logo white" class="img-fluid logo-img">
           </a>
-          <a href="./" class="logo-dark">
-            <img src="./assets/images/logos/logo-dark.png" alt="logo" class="img-fluid logo-img">
+          <a href="./" aria-label="VeroVanta Home" class="logo-dark">
+            <img src="./assets/images/logos/logo-dark.png" alt="VeroVanta logo dark" class="img-fluid logo-img">
           </a>
         </div>
-        <div class="d-flex align-items-center gap-4">
-
-          <div class="btn-group">
-            <button
-              class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle"
-              type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
-              <iconify-icon icon="solar:hamburger-menu-line-duotone" class="menu-icon fs-8 text-dark"></iconify-icon>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end p-4">
-              <div class="d-flex flex-column gap-6">
-                <div class="hstack justify-content-between border-bottom pb-6">
-                  <p class="mb-0 fs-5 text-dark">Menu</p>
-                  <button type="button" class="btn-close opacity-75" aria-label="Close"></button>
+        <nav aria-label="Main navigation">
+          <div class="d-flex align-items-center gap-4">
+            <div class="btn-group">
+              <button
+                class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle"
+                type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false"
+                aria-label="Toggle menu">
+                <iconify-icon icon="solar:hamburger-menu-line-duotone" class="menu-icon fs-8 text-dark"></iconify-icon>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end p-4" role="menu">
+                <div class="d-flex flex-column gap-6">
+                  <div class="hstack justify-content-between border-bottom pb-6">
+                    <p class="mb-0 fs-5 text-dark">Menu</p>
+                    <button type="button" class="btn-close opacity-75" aria-label="Close"></button>
+                  </div>
+                  <div class="d-flex flex-column gap-3">
+                    <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-2">
+                      <li class="header-item">
+                        <a href="./" aria-current="page" class="header-link hstack gap-2 fs-7 fw-bold text-dark">
+                          <img src="./assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
+                            class="img-fluid animate-spin">Home
+                        </a>
+                      </li>
+                      <li class="header-item">
+                        <a href="about-us.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark">
+                          <img src="./assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
+                            class="img-fluid animate-spin">About
+                        </a>
+                      </li>
+                      <li class="header-item">
+                        <a href="services.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark">
+                          <img src="./assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
+                            class="img-fluid animate-spin">Services
+                        </a>
+                      </li>
+                      <li class="header-item">
+                        <a href="contact.html" class="header-link active hstack gap-2 fs-7 fw-bold text-dark">
+                          <img src="./assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
+                            class="img-fluid animate-spin">Contact
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="d-flex flex-column gap-3">
-                  <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-2">
-                    <li class="header-item">
-                      <a href="./" aria-current="true"
-                        class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="./assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">Home</a>
-                    </li>
-                    <li class="header-item">
-                      <a href="about-us.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="./assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">About</a>
-                    </li>
-                    <!-- <li class="header-item">
-                        <a href="blog.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                            src="./assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                            class="img-fluid animate-spin">Blog</a>
-                      </li> -->
-                    <li class="header-item">
-                      <a href="services.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="./assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">Services</a>
-                    </li>
-                    <li class="header-item">
-                      <a href="contact.html" class="header-link active hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="./assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-                <!-- <div>
-                  <a class="text-dark" href="tel:+918078546511">+91 8078 546 511</a>
-                  <a class="fs-5 text-dark fw-bold"
-                    href="mailto:verovantacommunications@gmail.com">verovantacommunications@gmail.com</a>
-                </div> -->
-              </div>
-            </ul>
+              </ul>
+            </div>
           </div>
-        </div>
+        </nav>
       </div>
     </div>
   </header>
 
-  <!--  Page Wrapper -->
+  <!-- Page Wrapper -->
   <div class="page-wrapper overflow-hidden">
 
-    <!--  Banner Section -->
+    <!-- Banner Section -->
     <section class="banner-section banner-inner-section position-relative overflow-hidden d-flex align-items-end"
-      style="background-image: url(./assets/images/backgrounds/contact-banner.jpg);">
+      style="background-image: url(./assets/images/backgrounds/contact-banner.jpg);" aria-label="Contact Banner">
       <div class="container">
         <div class="d-flex flex-column gap-4 pb-5 pb-xl-10 position-relative z-1">
           <div class="d-flex align-items-end gap-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
@@ -100,8 +151,8 @@
                 <img src="./assets/images/svgs/primary-leaf.svg" alt="" class="img-fluid animate-spin">
                 <p class="mb-0 text-white fs-6 text-opacity-70">At Verovanta Communications, we understand that behind
                   every business
-                  challenge lies a human story. Your employees aren't just resources—they're the
-                  architects of your company's future. When they thrive, your bottom line follows.
+                  challenge lies a human story. Your employees aren't just resources—they're the architects of your
+                  company's future. When they thrive, your bottom line follows.
                 </p>
               </div>
             </div>
@@ -110,7 +161,7 @@
       </div>
     </section>
 
-    <!--  Get in touch Section -->
+    <!-- Get in touch Section -->
     <section class="get-in-touch py-5 py-lg-10 py-xl-10">
       <div class="container">
         <div class="d-flex flex-column gap-3 gap-xl-10">
@@ -121,8 +172,8 @@
                 <img src="./assets/images/svgs/primary-leaf.svg" alt="" class="img-fluid animate-spin">
                 <p class="mb-0 text-black fs-5 text-opacity-70">At Verovanta Communications, we understand that behind
                   every business
-                  challenge lies a human story. Your employees aren't just resources—they're the
-                  architects of your company's future. When they thrive, your bottom line follows.
+                  challenge lies a human story. Your employees aren't just resources—they're the architects of your
+                  company's future. When they thrive, your bottom line follows.
                 </p>
               </div>
             </div>
@@ -146,48 +197,55 @@
               </div>
             </div>
           </div>
-          <div class="row  gap-7 gap-xl-0">
+          <div class="row gap-7 gap-xl-0">
             <div class="col-xl-4">
               <p class="mb-0 fs-5" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-                Schedule Your Complimentary Strategy Session & in 30 minutes,
-                we'll:
+                Schedule Your Complimentary Strategy Session &amp; in 30 minutes, we'll:
               </p>
-              <ul class="list-disc pl-20 mt-3">
-                <li class="" data-aos="fade-right" data-aos-delay="110" data-aos-duration="1100">Identify your biggest
+              <ul class="list-disc ps-3 mt-3">
+                <li data-aos="fade-right" data-aos-delay="110" data-aos-duration="1100">Identify your biggest
                   communication challenges</li>
-                <li class="" data-aos="fade-right" data-aos-delay="120" data-aos-duration="1200">Explore potential
-                  solutions tailored to your team</li>
-                <li class="" data-aos="fade-right" data-aos-delay="130" data-aos-duration="1300">Provide actionable
-                  insights you can implement immediately</li>
-                <li class="" data-aos="fade-right" data-aos-delay="140" data-aos-duration="1400">Determine if we're the
-                  right fit for your organization</li>
+                <li data-aos="fade-right" data-aos-delay="120" data-aos-duration="1200">Explore potential solutions
+                  tailored to your team</li>
+                <li data-aos="fade-right" data-aos-delay="130" data-aos-duration="1300">Provide actionable insights you
+                  can implement immediately</li>
+                <li data-aos="fade-right" data-aos-delay="140" data-aos-duration="1400">Determine if we're the right fit
+                  for your organization</li>
               </ul>
             </div>
             <div class="col-xl-7">
-              <form class="d-flex flex-column gap-7" id="contact-form" onsubmit="sendEmail(event)" aria-required="true"
-                data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                <div id="notification" style="display:none; padding:10px; margin-top:10px; border-radius:5px;"></div>
+              <form class="d-flex flex-column gap-7" id="contact-form" onsubmit="sendEmail(event)"
+                aria-label="Contact form" autocomplete="on" novalidate>
+                <div id="notification" style="display:none; padding:10px; margin-top:10px; border-radius:5px;"
+                  aria-live="polite"></div>
                 <div>
-                  <input type="text" class="form-control border-bottom border-dark" id="formGroupExampleInput"
-                    placeholder="Name" name="name" required>
+                  <label for="contact-name" class="form-label visually-hidden">Name</label>
+                  <input type="text" class="form-control border-bottom border-dark" id="contact-name" placeholder="Name"
+                    name="name" required autocomplete="name" aria-required="true">
                 </div>
                 <div>
-                  <input type="text" class="form-control border-bottom border-dark" id="formGroupExampleInput"
-                    placeholder="Company" name="company">
+                  <label for="contact-company" class="form-label visually-hidden">Company</label>
+                  <input type="text" class="form-control border-bottom border-dark" id="contact-company"
+                    placeholder="Company" name="company" autocomplete="organization">
                 </div>
                 <div>
-                  <input type="email" class="form-control border-bottom border-dark" id="exampleInputEmail1"
-                    placeholder="Email" aria-describedby="emailHelp" name="email" required>
+                  <label for="contact-email" class="form-label visually-hidden">Email</label>
+                  <input type="email" class="form-control border-bottom border-dark" id="contact-email"
+                    placeholder="Email" aria-describedby="emailHelp" name="email" required autocomplete="email"
+                    aria-required="true">
                 </div>
                 <div>
-                  <input type="tel" class="form-control border-bottom border-dark" id="formGroupExampleInput"
-                    placeholder="Phone number" name="phone" required>
+                  <label for="contact-phone" class="form-label visually-hidden">Phone number</label>
+                  <input type="tel" class="form-control border-bottom border-dark" id="contact-phone"
+                    placeholder="Phone number" name="phone" required autocomplete="tel" aria-required="true">
                 </div>
                 <div>
-                  <textarea class="form-control border-bottom border-dark" id="exampleFormControlTextarea1"
-                    placeholder="Tell us about your requirement" rows="3" name="requirement" required></textarea>
+                  <label for="contact-requirement" class="form-label visually-hidden">Requirement</label>
+                  <textarea class="form-control border-bottom border-dark" id="contact-requirement"
+                    placeholder="Tell us about your requirement" rows="3" name="requirement" required
+                    aria-required="true"></textarea>
                 </div>
-                <button type="submit" class="btn w-100 justify-content-center">
+                <button type="submit" class="btn w-100 justify-content-center" aria-label="Submit message">
                   <span class="btn-text">Submit message</span>
                   <iconify-icon icon="lucide:arrow-up-right"
                     class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
@@ -204,7 +262,7 @@
   <footer class="footer bg-dark pt-5 pt-lg-10 pt-xl-10 pb-3">
     <div class="container">
       <div class="row">
-        <div class="col-xl-6 mb-8 mb-xl-0">
+        <section class="col-xl-6 mb-8 mb-xl-0" aria-label="Contact Information">
           <div class="d-flex flex-column gap-4 pe-xl-3">
             <h2 class="mb-0 text-white fs-10">Want to build something together?</h2>
             <div class="d-flex flex-column gap-2">
@@ -222,12 +280,12 @@
                 Corrazone, Panadans, CUSAT, Kalamassery, Kochi, Kerala - 682022
               </a>
             </div>
-            <a href="./">
-              <img src="./assets/images/logos/logo-white.svg" alt="logo" class="img-fluid logo-img">
+            <a href="./" aria-label="VeroVanta Home">
+              <img src="./assets/images/logos/logo-white.svg" alt="VeroVanta logo white" class="img-fluid logo-img">
             </a>
           </div>
-        </div>
-        <div class="col-md-5 col-xl-3 mb-8 mb-xl-0">
+        </section>
+        <nav class="col-md-5 col-xl-3 mb-8 mb-xl-0" aria-label="Footer Main navigation">
           <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
             <li><a class="link-hover fs-5 text-white" href="about-us.html">About Us</a></li>
             <li><a class="link-hover fs-5 text-white" id="services" href="services.html">Services</a></li>
@@ -235,40 +293,37 @@
             <li><a class="link-hover fs-5 text-white" href="#">Resources</a></li>
             <li><a class="link-hover fs-5 text-white" href="contact.html">Contact Us</a></li>
           </ul>
-        </div>
-        <div class="col-md-5 col-xl-3 mb-8 mb-xl-0">
+        </nav>
+        <nav class="col-md-5 col-xl-3 mb-8 mb-xl-0" aria-label="Footer Social Links">
           <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
             <li><a class="link-hover fs-5 text-white" href="#!">LinkedIn</a></li>
             <li><a class="link-hover fs-5 text-white" href="#!">Instagram</a></li>
             <li><a class="link-hover fs-5 text-white" href="#!">Facebook</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
     </div>
-    <p class="mb-0 text-white text-center mt-3 mt-lg-8">Copyright © 2025 <a class="text-white text-opacity-70 " href="#"
-        target="_blank">VeroVanta</a>. All Rights Reserved.
+    <p class="mb-0 text-white text-center mt-3 mt-lg-8">
+      Copyright © 2025 <a class="text-white text-opacity-70" href="#" target="_blank">VeroVanta</a>. All Rights
+      Reserved.
     </p>
   </footer>
 
   <div class="get-template hstack gap-2">
     <button class="btn bg-primary p-2 round-52 rounded-circle hstack justify-content-center flex-shrink-0"
-      id="scrollToTopBtn">
+      id="scrollToTopBtn" aria-label="Back to top">
       <iconify-icon icon="lucide:arrow-up" class="fs-7 text-dark"></iconify-icon>
     </button>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- JS Libraries and Custom -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous"></script>
   <script src="./assets/js/custom.js"></script>
-  <!-- solar icons -->
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
   <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script type="text/javascript">
@@ -278,16 +333,15 @@
       var notification = document.getElementById('notification');
       notification.style.display = 'block';
       notification.textContent = message;
-      notification.style.backgroundColor = isSuccess ? '#d4edda' : '#f8d7da'; // green/red background
-      notification.style.color = isSuccess ? '#155724' : '#721c24';           // green/red text color
+      notification.style.backgroundColor = isSuccess ? '#d4edda' : '#f8d7da';
+      notification.style.color = isSuccess ? '#155724' : '#721c24';
       setTimeout(() => {
         notification.style.display = 'none';
-      }, 5000); // Hide after 5 seconds
+      }, 5000);
     }
 
     function sendEmail(e) {
       e.preventDefault();
-
       emailjs.sendForm('service_b10w1zb', 'template_bnyyxvg', '#contact-form')
         .then(function () {
           showNotification('Your inquiry has been sent!', true);
@@ -298,8 +352,6 @@
         });
     }
   </script>
-
-
 </body>
 
 </html>

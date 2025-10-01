@@ -1,5 +1,8 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"); */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 /*!
  * Bootstrap  v5.3.6 (https://getbootstrap.com/)
@@ -71,12 +74,13 @@
   --bs-dark-border-subtle: #1F2A2E;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: "Manrope", sans-serif;
+  --bs-font-sans-serif: "Poppins", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
+  --bs-letter-spacing: 0.01em;
   --bs-body-line-height: 1.5;
   --bs-body-color: rgba(31, 42, 46, 0.7);
   --bs-body-color-rgb: 31, 42, 46;
@@ -185,6 +189,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -199,11 +204,13 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
+  letter-spacing: var(--bs-letter-spacing);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
 }
 
 hr {
@@ -238,7 +245,25 @@ h1,
   font-size: calc(1.925rem + 8.1vw);
 }
 
+.fs-mobile-cstm {
+  font-size: 1.5rem !important;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .fs-mobile-cstm {
+    font-size: 2.1rem !important;
+  }
+}
+
 @media (min-width: 1200px) {
+  .fs-mobile-cstm {
+    font-size: 2.4rem !important;
+  }
+
+  h2,
+  .h2 {
+    font-size: 3rem;
+  }
 
   h1,
   .h1 {
@@ -249,14 +274,6 @@ h1,
 h2,
 .h2 {
   font-size: calc(1.425rem + 2.1vw);
-}
-
-@media (min-width: 1200px) {
-
-  h2,
-  .h2 {
-    font-size: 3rem;
-  }
 }
 
 h3,
@@ -6001,6 +6018,47 @@ fieldset:disabled .btn {
   animation: 1s linear infinite progress-bar-stripes;
 }
 
+.btn-text {
+  padding-right: 10px;
+}
+
+.round-52 {
+  width: 52px;
+  height: 52px;
+}
+
+.btn-icon {
+  line-height: 52px;
+}
+
+/* Fix the dark-themed tab hover effect */
+.nav-link.bg-dark:hover {
+  color: #fff;
+  background-color: #212529;
+  border-color: #dee2e6 #dee2e6 #212529;
+}
+
+.nav-link.bg-dark.active {
+  border-bottom: 2px solid #0d6efd;
+  /* Highlight color for active tab */
+}
+
+.nav-link.bg-dark:hover {
+  color: #fff;
+  background-color: #212529;
+  border: none !important;
+}
+
+.nav-tabs {
+  --bs-nav-tabs-border-width: 0 !important;
+}
+
+
+
+.services-tab .nav-tabs .nav-item .nav-link.active {
+  border-bottom: 2px solid #040404;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .progress-bar-animated {
     animation: none;
@@ -10507,7 +10565,7 @@ fieldset:disabled .btn {
 }
 
 .fs-5 {
-  font-size: 1.125rem !important;
+  font-size: 1rem !important;
 }
 
 .fs-6 {
@@ -11346,8 +11404,9 @@ fieldset:disabled .btn {
 
 @media (min-width: 576px) {
   .logo-img {
-      max-width: 220px;
-    }
+    max-width: 220px;
+  }
+
   .service-shape-2 {
     padding: 5px 10px 40px 20px;
   }
@@ -12941,11 +13000,13 @@ fieldset:disabled .btn {
 
 @media (min-width: 768px) {
   .service-sec-1 {
-      padding: 0px 40px 40px 40px;
-    }
+    padding: 0px 40px 40px 40px;
+  }
+
   .logo-img {
-      max-width: 220px;
-    }
+    max-width: 220px;
+  }
+
   .service-shape-2 {
     padding: 5px 40px 40px 20px;
   }
@@ -14539,8 +14600,9 @@ fieldset:disabled .btn {
 
 @media (min-width: 992px) {
   .logo-img {
-      max-width: 220px;
-    }
+    max-width: 220px;
+  }
+
   .service-shape-2 {
     padding: 5px 50px 40px 20px;
   }
@@ -17181,6 +17243,7 @@ fieldset:disabled .btn {
     padding: 0 !important;
   }
 
+
   .p-xl-1 {
     padding: 0.25rem !important;
   }
@@ -17750,7 +17813,7 @@ fieldset:disabled .btn {
 
 @media (min-width: 1400px) {
   .logo-img {
-    max-width: 250px;
+    max-width: 195px;
   }
 
   .float-xxl-start {
