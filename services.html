@@ -666,6 +666,12 @@
         .then(function () {
           showNotification('Your inquiry has been sent!', true);
           document.getElementById('services-contact-form').reset();
+          // If modal, hide it after success
+          const modalEl = document.getElementById('solutionsModal');
+          if (modalEl) {
+            const bsModal = bootstrap.Modal.getInstance(modalEl) || new bootstrap.Modal(modalEl);
+            bsModal.hide();
+          }
         }, function (error) {
           console.log({ error });
           showNotification('Failed to send. Try again.', false);

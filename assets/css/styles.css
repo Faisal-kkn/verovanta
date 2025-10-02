@@ -20037,5 +20037,14 @@ ul {
   z-index: -1;
 }
 
+.error-message {
+  color: #dc3545;
+  font-size: 0.95em;
+  margin-top: 2px;
+}
 
+[aria-invalid="true"] {
+  border-color: #dc3545 !important;
+  outline: 1px solid #dc3545;
+}
 /*# sourceMappingURL=styles.css.map */

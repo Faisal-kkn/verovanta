@@ -29,7 +29,8 @@
   <meta property="twitter:title" content="VeroVanta Communications - Corporate Training & L&D Solutions">
   <meta property="twitter:description"
     content="Transform your workplace with expert L&D consulting, gamified training programs, and strategic workforce development.">
-  <meta property="twitter:image" content="https://www.verovantacommunications.com/assets/images/backgrounds/banner.jpeg">
+  <meta property="twitter:image"
+    content="https://www.verovantacommunications.com/assets/images/backgrounds/banner.jpeg">
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/png" href="./assets/images/logos/favicon.svg" />
@@ -78,7 +79,7 @@
 
 <body>
 
-  <!-- Header -->
+  <!-- Header (unchanged) -->
   <header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100" role="banner">
     <div class="container">
       <div class="header-wrapper d-flex align-items-center justify-content-between">
@@ -145,10 +146,12 @@
   <!--  Page Wrapper -->
   <main class="page-wrapper overflow-hidden">
 
-    <!--  Banner Section -->
+    <!--  Banner Section (unchanged) -->
     <section class="banner-section position-relative d-flex align-items-end min-vh-100">
-      <img src="./assets/images/backgrounds/banner.jpeg" alt="Corporate training and team development"
+      <div class="text-center d-md-block d-flex justify-content-center">
+        <img src="./assets/images/backgrounds/banner.jpeg" alt="Corporate training and team development"
         class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
+      </div>
       <div class="container">
         <div class="d-flex flex-column gap-4 pb-8 position-relative z-1">
           <div class="d-flex align-items-end gap-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
@@ -177,7 +180,7 @@
       </div>
     </section>
 
-    <!--  Stats & Facts Section -->
+    <!--  Stats & Facts Section (unchanged) -->
     <section class="stats-facts py-5 py-lg-10 py-xl-10 position-relative overflow-hidde">
       <div class="container">
         <div class="row gap-7 gap-xl-0 order-reverse order-xl-row">
@@ -223,7 +226,7 @@
       </div>
     </section>
 
-    <!--  Services Section -->
+    <!--  Services Section (unchanged) -->
     <section class="services py-5 py-lg-10 py-xl-10" id="services" style="background-color: #003350;">
       <div class="container">
         <div class="d-flex flex-column gap-3 gap-xl-10">
@@ -314,8 +317,8 @@
                     </li>
                   </ul>
                   <div class="container mt-3 ">
-                    <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#solutionsModal" data-aos="fade-up"
-                      data-aos-delay="300" data-aos-duration="1000" aria-label="Explore our learning solutions">
+                    <a href="services.html" class="btn" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000"
+                      aria-label="Explore our learning solutions">
                       <span class="btn-text">Explore Solutions</span>
                       <iconify-icon icon="lucide:arrow-up-right"
                         class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"
@@ -330,7 +333,7 @@
       </div>
     </section>
 
-    <!--  Why choose us Section -->
+    <!--  Why choose us Section (unchanged) -->
     <section class="why-choose-us py-5 py-lg-10 py-xl-10">
       <div class="container">
         <div class="row justify-content-between gap-5 gap-xl-0">
@@ -397,23 +400,25 @@
           <div class="row gap-7 gap-xl-0">
             <div class="col-xl-4"></div>
             <div class="col-xl-7">
-              <form class="d-flex flex-column gap-7" id="homeContactForm" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                <div id="homeNotification" style="display:none; padding:10px; margin-top:10px; border-radius:5px;"
-                  role="alert"></div>
+              <!-- MAIN (non-modal) CONTACT FORM -->
+              <form class="d-flex flex-column gap-7" id="home-contact-form" data-aos="fade-up" data-aos-delay="200"
+                data-aos-duration="1000" novalidate>
+                <div class="form-notification" style="display:none; padding:10px; margin-top:10px; border-radius:5px;"
+                  role="alert" aria-live="polite"></div>
                 <div>
                   <label for="homeName" class="visually-hidden">Name</label>
                   <input type="text" class="form-control border-bottom border-dark" id="homeName" placeholder="Name"
-                    name="name" required>
+                    name="name" required autocomplete="name">
                 </div>
                 <div>
                   <label for="homeCompany" class="visually-hidden">Company</label>
                   <input type="text" class="form-control border-bottom border-dark" id="homeCompany"
-                    placeholder="Company" name="company">
+                    placeholder="Company" name="company" autocomplete="organization">
                 </div>
                 <div>
                   <label for="homeEmail" class="visually-hidden">Email</label>
                   <input type="email" class="form-control border-bottom border-dark" id="homeEmail" placeholder="Email"
-                    name="email" required>
+                    name="email" required autocomplete="email">
                 </div>
                 <div>
                   <label for="homeRequirement" class="visually-hidden">Tell us about your requirement</label>
@@ -495,7 +500,7 @@
     </button>
   </div>
 
-  <!-- Modal -->
+  <!-- Modal (FIXED: unique form id and notification element) -->
   <div class="modal fade" id="solutionsModal" tabindex="-1" aria-labelledby="solutionsModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content bg-white text-dark ">
@@ -504,39 +509,40 @@
           <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body p-3">
-          <form class="d-flex flex-column gap-2" id="home-contact-form" aria-label="Service Enquiry Form" autocomplete="on"
-            novalidate>
-            <div id="home-notification" style="display:none; padding:10px; margin-top:10px; border-radius:5px;"
-              aria-live="polite"></div>
+          <form class="d-flex flex-column gap-2" id="modal-contact-form" aria-label="Service Enquiry Form"
+            autocomplete="on" novalidate>
+            <div class="form-notification" style="display:none; padding:10px; margin-top:10px; border-radius:5px;"
+              role="alert" aria-live="polite"></div>
             <div>
-              <label for="home-name" class="form-label visually-hidden">Name</label>
-              <input type="text" class="form-control border-bottom border-dark" id="home-name" placeholder="Name" name="name"
-                required autocomplete="name" aria-required="true">
+              <label for="modal-name" class="form-label visually-hidden">Name</label>
+              <input type="text" class="form-control border-bottom border-dark" id="modal-name" placeholder="Name"
+                name="name" required autocomplete="name" aria-required="true">
             </div>
             <div>
-              <label for="home-role" class="form-label visually-hidden">Role</label>
-              <input type="text" class="form-control border-bottom border-dark" id="home-role" placeholder="Role" name="role"
-                required autocomplete="organization-title">
+              <label for="modal-role" class="form-label visually-hidden">Role</label>
+              <input type="text" class="form-control border-bottom border-dark" id="modal-role" placeholder="Role"
+                name="role" required autocomplete="organization-title">
             </div>
             <div>
-              <label for="home-company" class="form-label visually-hidden">Company</label>
-              <input type="text" class="form-control border-bottom border-dark" id="home-company" placeholder="Company"
+              <label for="modal-company" class="form-label visually-hidden">Company</label>
+              <input type="text" class="form-control border-bottom border-dark" id="modal-company" placeholder="Company"
                 name="company" required autocomplete="organization">
             </div>
             <div>
-              <label for="home-email" class="form-label visually-hidden">Email</label>
-              <input type="email" class="form-control border-bottom border-dark" id="home-email" placeholder="Email"
+              <label for="modal-email" class="form-label visually-hidden">Email</label>
+              <input type="email" class="form-control border-bottom border-dark" id="modal-email" placeholder="Email"
                 name="email" required autocomplete="email" aria-required="true">
             </div>
             <div>
-              <label for="home-phone" class="form-label visually-hidden">Phone Number</label>
-              <input type="tel" class="form-control border-bottom border-dark" id="home-phone" placeholder="Phone number"
-                name="phone" autocomplete="tel">
+              <label for="modal-phone" class="form-label visually-hidden">Phone Number</label>
+              <input type="tel" class="form-control border-bottom border-dark" id="modal-phone"
+                placeholder="Phone number" name="phone" autocomplete="tel">
             </div>
             <div>
-              <label for="home-requirement" class="form-label visually-hidden">Requirement</label>
-              <textarea class="form-control border-bottom border-dark" id="home-requirement"
-                placeholder="Tell us about your requirement" rows="3" name="requirement" required aria-required="true"></textarea>
+              <label for="modal-requirement" class="form-label visually-hidden">Requirement</label>
+              <textarea class="form-control border-bottom border-dark" id="modal-requirement"
+                placeholder="Tell us about your requirement" rows="3" name="requirement" required
+                aria-required="true"></textarea>
             </div>
             <button type="submit" class="btn w-100 justify-content-center" aria-label="Submit Service Message">
               <span class="btn-text">Submit message</span>
@@ -550,6 +556,7 @@
   </div>
   <!-- Modal Close -->
 
+  <!-- SCRIPTS (kept CDN links as original) -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -563,200 +570,129 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./assets/js/custom.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+
+  <!-- EmailJS library -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+  <!-- Unified validation + submission script for both forms -->
   <script>
-    // Validation for home page contact form (non-modal)
-    document.getElementById('homeContactForm').addEventListener('submit', function (event) {
-      event.preventDefault(); // Prevent default submission
+    document.addEventListener('DOMContentLoaded', function () {
+      // Replace with your EmailJS public key if different
+      if (typeof emailjs !== 'undefined') {
+        try { emailjs.init('6DXhveWmkybis5ZXx'); } catch (e) { console.warn('EmailJS init failed', e); }
+      }
 
-      const form = event.target;
-      const notification = document.getElementById('homeNotification');
+      const homeForm = document.getElementById('home-contact-form');
+      const modalForm = document.getElementById('modal-contact-form');
 
-      // Clear previous notification
-      notification.style.display = 'none';
-      notification.textContent = '';
-
-      function showError(message) {
-        notification.style.display = 'block';
+      function showNotification(form, message, isSuccess) {
+        const notification = form.querySelector('.form-notification');
+        if (!notification) return;
         notification.textContent = message;
-        notification.style.backgroundColor = '#f8d7da';  // red background
-        notification.style.color = '#721c24';            // dark red text
-        notification.focus();
-      }
-
-      // Validate Name
-      const name = form['name'].value.trim();
-      if (name.length < 2) {
-        showError("Please enter a valid name (at least 2 characters).");
-        form['name'].focus();
-        return;
-      }
-
-      // Company is optional, no validation needed
-
-      // Validate Email
-      const email = form['email'].value.trim();
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailPattern.test(email)) {
-        showError("Please enter a valid email address.");
-        form['email'].focus();
-        return;
-      }
-
-      // Validate Requirement
-      const requirement = form['requirement'].value.trim();
-      if (requirement.length < 10) {
-        showError("Please provide more details about your requirement (at least 10 characters).");
-        form['requirement'].focus();
-        return;
-      }
-
-      // All validations passed, proceed with actual form submission or AJAX call
-      notification.style.display = 'none';
-
-      // Example: call existing submit handler or your AJAX send function here
-      // replace the below with your actual submit code if needed
-      // form.submit() or your AJAX call...
-
-      // For demonstration, just show success and clear form
-      notification.style.display = 'block';
-      notification.textContent = "Your inquiry has been sent!";
-      notification.style.backgroundColor = '#d4edda'; // green background
-      notification.style.color = '#155724';           // green text
-
-      form.reset();
-    });
-  </script>
-
-  <script>
-    // Attach event listener to form submit
-    document.getElementById('home-contact-form').addEventListener('submit', function (event) {
-      event.preventDefault(); // Prevent default submission
-
-      const form = event.target;
-      const notification = document.getElementById('home-notification');
-
-      // Clear previous notifications
-      notification.style.display = 'none';
-      notification.textContent = '';
-
-      // Helper function to show error
-      function showError(message) {
         notification.style.display = 'block';
-        notification.textContent = message;
-        notification.style.backgroundColor = '#f8d7da';  // red background
-        notification.style.color = '#721c24';            // dark red text
-        notification.focus();
+        notification.style.backgroundColor = isSuccess ? '#d4edda' : '#f8d7da';
+        notification.style.color = isSuccess ? '#155724' : '#721c24';
+        setTimeout(() => { notification.style.display = 'none'; }, 5000);
       }
 
-      // Validate Name
-      const name = form['name'].value.trim();
-      if (name.length < 2) {
-        showError("Please enter a valid name (at least 2 characters).");
-        form['name'].focus();
-        return;
+      function validateEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
       }
 
-      // Validate Role
-      const role = form['role'].value.trim();
-      if (role.length < 2) {
-        showError("Please enter your role (at least 2 characters).");
-        form['role'].focus();
-        return;
+      function validatePhone(phone) {
+        return /^[+()\-\.\d\s]{7,}$/.test(phone);
       }
 
-      // Validate Company
-      const company = form['company'].value.trim();
-      if (company.length < 2) {
-        showError("Please enter your company name (at least 2 characters).");
-        form['company'].focus();
-        return;
-      }
+      async function handleSubmit(e) {
+        e.preventDefault();
+        const form = e.currentTarget;
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const formData = new FormData(form);
 
-      // Validate Email using regex
-      const email = form['email'].value.trim();
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailPattern.test(email)) {
-        showError("Please enter a valid email address.");
-        form['email'].focus();
-        return;
-      }
+        const name = (formData.get('name') || '').toString().trim();
+        const email = (formData.get('email') || '').toString().trim();
+        const requirement = (formData.get('requirement') || '').toString().trim();
+        const phone = (formData.get('phone') || '').toString().trim();
+        const role = (formData.get('role') || '').toString().trim();
+        const company = (formData.get('company') || '').toString().trim();
 
-      // Validate Phone (optional, but if entered, must be phone number format)
-      const phone = form['phone'].value.trim();
-      if (phone.length > 0) {
-        // Simple phone regex to allow digits, spaces, +, -, ()
-        const phonePattern = /^[+()\-.\d\s]{7,}$/;
-        if (!phonePattern.test(phone)) {
-          showError("Please enter a valid phone number.");
-          form['phone'].focus();
+        // Name
+        if (name.length < 2) {
+          showNotification(form, 'Please enter a valid name (at least 2 characters).', false);
+          form.querySelector('[name="name"]').focus();
           return;
         }
-      }
 
-      // Validate Requirement (textarea)
-      const requirement = form['requirement'].value.trim();
-      if (requirement.length < 10) {
-        showError("Please provide more details about your requirement (at least 10 characters).");
-        form['requirement'].focus();
-        return;
-      }
+        // Modal-specific required fields
+        if (form.id === 'modal-contact-form') {
+          if (role.length < 2) {
+            showNotification(form, 'Please enter your role (at least 2 characters).', false);
+            form.querySelector('[name="role"]').focus();
+            return;
+          }
+        }
 
-      // All validations passed, proceed to call sendEmail (or your form submit handler)
-      notification.style.display = 'none';
-      sendEmail(event); // Assuming your existing sendEmail function handles the rest
-    });
-  </script>
-  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("6DXhveWmkybis5ZXx");
+        if (company.length < 2) {
+          showNotification(form, 'Please enter your company name (at least 2 characters).', false);
+          form.querySelector('[name="company"]').focus();
+          return;
+        }
 
-      function showNotification(notificationId, message, isSuccess) {
-        var notification = document.getElementById(notificationId);
-        if (notification) {
-          notification.style.display = 'block';
-          notification.textContent = message;
-          notification.style.backgroundColor = isSuccess ? '#d4edda' : '#f8d7da';
-          notification.style.color = isSuccess ? '#155724' : '#721c24';
-          setTimeout(function () {
-            notification.style.display = 'none';
-          }, 5000);
+        // Email
+        if (!validateEmail(email)) {
+          showNotification(form, 'Please enter a valid email address.', false);
+          form.querySelector('[name="email"]').focus();
+          return;
+        }
+
+
+        // Phone optional but if present must be valid
+        if (phone.length > 0 && !validatePhone(phone)) {
+          showNotification(form, 'Please enter a valid phone number.', false);
+          form.querySelector('[name="phone"]').focus();
+          return;
+        }
+
+        // Requirement
+        if (requirement.length < 10) {
+          showNotification(form, 'Please provide more details about your requirement (at least 10 characters).', false);
+          form.querySelector('[name="requirement"]').focus();
+          return;
+        }
+
+        // Disable button and show sending state
+        submitBtn.disabled = true;
+        const originalHtml = submitBtn.innerHTML;
+        submitBtn.innerHTML = 'Sending...';
+
+        try {
+          // NOTE: Replace 'service_b10w1zb' and 'template_bnyyxvg' with your actual EmailJS service/template IDs
+          await emailjs.sendForm('service_b10w1zb', 'template_bnyyxvg', form);
+          showNotification(form, 'Your inquiry has been sent! We will reply soon.', true);
+          form.reset();
+
+          // If modal, hide it after success
+          if (form.id === 'modal-contact-form') {
+            const modalEl = document.getElementById('solutionsModal');
+            if (modalEl) {
+              const bsModal = bootstrap.Modal.getInstance(modalEl) || new bootstrap.Modal(modalEl);
+              bsModal.hide();
+            }
+          }
+        } catch (err) {
+          console.error('Email send error', err);
+          showNotification(form, 'Failed to send. Please try again later.', false);
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalHtml;
         }
       }
 
-      // Home contact form
-      var homeForm = document.getElementById('homeContactForm');
-      if (homeForm) {
-        homeForm.addEventListener('submit', function (e) {
-          e.preventDefault();
-          emailjs.sendForm('service_b10w1zb', 'template_bnyyxvg', this)
-            .then(function () {
-              showNotification('homeNotification', 'Your inquiry has been sent!', true);
-              homeForm.reset();
-            }, function (error) {
-              console.log(error);
-              showNotification('homeNotification', 'Failed to send. Try again.', false);
-            });
-        });
-      }
-
-      // Modal contact form
-      var modalForm = document.getElementById('modalContactForm');
-      if (modalForm) {
-        modalForm.addEventListener('submit', function (e) {
-          e.preventDefault();
-          emailjs.sendForm('service_b10w1zb', 'template_bnyyxvg', this)
-            .then(function () {
-              showNotification('modalNotification', 'Your inquiry has been sent!', true);
-              modalForm.reset();
-            }, function (error) {
-              console.log(error);
-              showNotification('modalNotification', 'Failed to send. Try again.', false);
-            });
-        });
-      }
-    })();
+      if (homeForm) homeForm.addEventListener('submit', handleSubmit);
+      if (modalForm) modalForm.addEventListener('submit', handleSubmit);
+    });
   </script>
+
 </body>
 
 </html>
