@@ -20047,4 +20047,220 @@ ul {
   border-color: #dc3545 !important;
   outline: 1px solid #dc3545;
 }
+
 /*# sourceMappingURL=styles.css.map */
+
+
+.overlapping-cards .section-header {
+  text-align: center;
+  margin-bottom: 80px;
+  color: white;
+}
+
+.overlapping-cards .section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.overlapping-cards .section-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.overlapping-cards .cards-container {
+  position: relative;
+  min-height: 1200px;
+}
+
+.overlapping-cards .service-card {
+  position: sticky;
+  background: white;
+  border-radius: 24px;
+  padding: 48px;
+  margin-bottom: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.overlapping-cards .service-card:nth-child(1) {
+  top: 80px;
+  background: linear-gradient(135deg, #1374ac 0%, #27bddf 100%);
+  color: white;
+}
+
+.overlapping-cards .service-card:nth-child(2) {
+  top: 100px;
+  background: linear-gradient(135deg, #27bddf 0%, #1374ac 100%);
+  color: white;
+}
+
+.overlapping-cards .service-card:nth-child(3) {
+  top: 120px;
+  background: linear-gradient(135deg, #1374ac 0%, #27bddf 100%);
+  color: white;
+}
+
+.overlapping-cards .service-card:nth-child(4) {
+  top: 120px;
+  background: linear-gradient(135deg, #27bddf 0%, #1374ac 100%);
+  color: white;
+}
+
+.overlapping-cards .service-card:nth-child(5) {
+  top: 120px;
+  background: linear-gradient(135deg, #1374ac 0%, #27bddf 100%);
+  color: white;
+}
+
+.overlapping-cards .service-card:nth-child(6) {
+  top: 120px;
+  background: linear-gradient(135deg, #27bddf 0%, #1374ac 100%);
+  color: white;
+}
+
+.overlapping-cards .service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+}
+
+.overlapping-cards .card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.overlapping-cards .card-icon {
+  width: 64px;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.overlapping-cards .card-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.overlapping-cards .card-content ul {
+  list-style: none;
+  display: grid;
+  gap: 16px;
+}
+
+.overlapping-cards .card-content li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.overlapping-cards .card-content li::before {
+  content: "✓";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  flex-shrink: 0;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.overlapping-cards .cta-section {
+  text-align: center;
+  margin-top: 100px;
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  backdrop-filter: blur(10px);
+}
+
+.overlapping-cards .cta-section h3 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+.overlapping-cards .cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  color: #667eea;
+  padding: 18px 36px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.overlapping-cards .cta-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .overlapping-cards .section-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .overlapping-cards .service-card {
+    padding: 32px 24px;
+    margin-bottom: 30px;
+  }
+
+  .overlapping-cards .service-card:nth-child(1) {
+    top: 60px;
+  }
+
+  .overlapping-cards .service-card:nth-child(2) {
+    top: 70px;
+  }
+
+  .overlapping-cards .service-card:nth-child(3) {
+    top: 80px;
+  }
+
+  .overlapping-cards .service-card:nth-child(4) {
+    top: 90px;
+  }
+
+  .overlapping-cards .service-card:nth-child(5) {
+    top: 100px;
+  }
+
+  .overlapping-cards .service-card:nth-child(6) {
+    top: 110px;
+  }
+
+  .overlapping-cards .card-title {
+    font-size: 1.5rem;
+  }
+
+  .overlapping-cards .card-content li {
+    font-size: 1rem;
+  }
+
+  .overlapping-cards .cards-container {
+    min-height: 1000px;
+  }
+}
